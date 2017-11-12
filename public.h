@@ -18,10 +18,6 @@ typedef struct Player {
 	int armor;
 }Player;
 
-Vector2 spawnPlayer();
-Vector2 playerMovement();
-
-
 ///////////////////////////////////////
 ///ENVIRONMENT/////////////////////////
 ///////////////////////////////////////
@@ -41,6 +37,7 @@ typedef struct Asteroid {
 	Vector2 pos;
 	Vector2 texturePos;
 	Texture2D texture;
+	bool active;
 	int radius;
 	int width;
 	int height;
